@@ -201,5 +201,7 @@ function add_custom_taxonomies() {
   }
   add_action( 'init', 'add_custom_taxonomies', 0 );
 
+  remove_filter( 'render_block', 'wp_render_layout_support_flag', 10, 2 ); //removes the annoying automargin
+
 
   

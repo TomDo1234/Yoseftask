@@ -11,7 +11,7 @@ registerBlockType('gtcb-blocks/custom-block',{
 });
 
 registerBlockType('gtcb-blocks/custom-block2',{
-    title:'Tom Block2',
+    title:'VinylMaster Header',
     icon: 'index-card',
     category : 'common',
 
