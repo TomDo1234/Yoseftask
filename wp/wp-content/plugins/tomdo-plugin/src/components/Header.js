@@ -1,20 +1,22 @@
-import React from 'react';
 import './Header.css';
 
 export default function Header() {
     return(
         <header className='theheader'>
-            <div class = "thelogo"></div>
-            <div class = "headercontainer">
-                <div class = "headerlink">Products</div>
-                <div class = "headerlink">Industries</div>
-                <div class = "headerlink">Pricing</div>
-                <div class = "headerlink">About</div>
-                <div class = "headerlink">Downloads</div>
-                <div class = "headerlink">Dealers</div>
-                <div class = "headerlink">Support</div>
-                <div class = "headerlink">Contact</div>
-            </div>            
+            <div className= "thelogo"></div>
+            <div className= "headercontainer">
+                <div className= "headerlink">Products</div>
+                <div className= "downarrow"></div>
+                <div className= "headerlink">Industries</div>
+                <div className= "downarrow"></div>
+                <div className= "headerlink">Pricing</div>
+                <div className= "headerlink">About</div>
+                <div className= "headerlink">Downloads</div>
+                <div className= "headerlink">Dealers</div>
+                <div className= "headerlink">Support</div>
+                <div className= "headerlink">Contact</div>
+            </div>  
+            <div className= "theshoppingbag"></div>          
         </header>
     );
 }
