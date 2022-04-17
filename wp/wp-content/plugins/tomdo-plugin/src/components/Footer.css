@@ -1,0 +1,35 @@
+.thefooter {
+    width: 100%;
+    height: 679px;
+    background: #3B393A;  
+    color : #FFFFFF;  
+}
+
+.row {
+    display : flex;
+    width: calc(100% - 16rem);
+    justify-content: space-between;
+    padding: 5rem 7rem 5rem 7em;
+}
+
+.col {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    font-size : 1rem;
+    font-weight:300;
+    line-height: 1.75em;    
+}
+
+.col div:not(.headcol , .selectedprod) {
+    color: #CBCBCB;    
+}
+
+.col div {
+    height: 40px;
+}
+
+div.headcol {
+    font-weight:500;
+    height:50px;
+}

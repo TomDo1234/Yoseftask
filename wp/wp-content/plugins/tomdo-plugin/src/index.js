@@ -1,13 +1,14 @@
 import {registerBlockType} from '@wordpress/blocks';
-import Header from './components/Header'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 registerBlockType('gtcb-blocks/custom-block',{
-    title:'Tom Block',
+    title:'VinylMaster Footer',
     icon: 'index-card',
     category : 'common',
 
-    edit: () => (<div>lol 12344444</div>),
-    save: () => (<div>lol 12344444</div>)
+    edit: () => (<Footer/>),
+    save: () => (<Footer/>)
 });
 
 registerBlockType('gtcb-blocks/custom-block2',{
