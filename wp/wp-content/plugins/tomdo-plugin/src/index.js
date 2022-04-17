@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import LoveUsing from './components/LoveUsing';
 import Static1 from './components/Static1';
+import SystemReqs from './components/SystemReqs';
 
 registerBlockType('gtcb-blocks/custom-block',{
     title:'VinylMaster Footer',
