@@ -39,3 +39,12 @@ registerBlockType('gtcb-blocks/custom-block4',{
     edit: () => (<Static1/>),
     save: () => (<Static1/>)
 });
+
+registerBlockType('gtcb-blocks/custom-block5',{
+    title:'VinylMaster System Requirements',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<SystemReqs/>),
+    save: () => (<SystemReqs/>)
+});

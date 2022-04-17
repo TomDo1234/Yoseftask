@@ -1,38 +1,26 @@
 .loveusing {
-    width:100%;
-    height: 256px;
-    background: #8164A5 0% 0% no-repeat padding-box;
-    color:#FFFFFF;
-    font-weight:300;
-}
-
-.loveusing .message {
-    float:right;
-    margin: 3% 7% 0 0;
-
-}
-
-.loveusing .left {
+  width: 100%;
+  height: 256px;
+  background: #8164A5 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  font-weight: 300; }
+  .loveusing .message {
+    float: right;
+    margin: 3% 7% 0 0; }
+  .loveusing .left {
     font-family: Proxima Nova;
     width: 50%;
     display: inline-block;
     margin: 0 6rem;
-    font-size:20px;
-}
-
-.left h3 {
-    font-family: Proxima Nova;
-}
-
-.left .feedback {
-    display: inline-block;
-}
-
-.writeareview {
-    background: transparent url('img/Write a review.png') 0% 0% no-repeat padding-box;
+    font-size: 20px; }
+    .loveusing .left h3 {
+      font-family: Proxima Nova; }
+    .loveusing .left .feedback {
+      display: inline-block; }
+  .loveusing .writeareview {
+    background: transparent url("img/Write a review.png") 0% 0% no-repeat padding-box;
     width: 196px;
     height: 52px;
     margin-left: 10%;
     display: inline-block;
-    cursor: pointer;
-}
+    cursor: pointer; }
