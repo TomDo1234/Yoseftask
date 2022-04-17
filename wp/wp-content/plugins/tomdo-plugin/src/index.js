@@ -6,6 +6,7 @@ import Static1 from './components/Static1';
 import SystemReqs from './components/SystemReqs';
 import {RichText} from '@wordpress/block-editor';
 import './components/Sectionsummary.css';
+import Pagejump from './components/Pagejump';
 
 registerBlockType('gtcb-blocks/custom-block',{
     title:'VinylMaster Footer',
@@ -52,44 +53,50 @@ registerBlockType('gtcb-blocks/custom-block5',{
     save: () => (<SystemReqs/>)
 });
 
-registerBlockType('gtcb-blocks/custom-block6',{
+registerBlockType('gtcb-blocks/custom-block8',{
     title:'VinylMaster Section Summary',
     icon: 'index-card',
     category : 'common',
 
+    attributes: {
+        headerText: {
+            type: 'array',
+            source: 'children',
+            selector : 'h3'
+        },
+        bodyText: {
+            type: 'array',
+            source: 'children',
+            selector : '.thetext'
+        }
+    },
+
     edit: (props) => {
-        let {attributes: {headerText,bodyText,customcolor}, setAttributes } = props;
+        let {attributes: {headerText,bodyText}, setAttributes } = props;
 
         return(
-            <div className= 'sectionsummary'> 
+            <div className= "sectionsummary"> 
                 <RichText
                 tagName="h3"
-                placeholder={'Header Text'}
+                placeholder={"Header Text"}
                 value = {headerText}
                 onChange={(value) => setAttributes({headerText: value})}                
                 /> 
                 <RichText
                 tagName="div"
-                placeholder={'Body Text'}
+                placeholder={"Body Text"}
                 value = {bodyText}
                 onChange={(value) => setAttributes({bodyText: value})}      
                 className="thetext"
-                />
-                <RichText
-                tagName="div"
-                placeholder={'Custom Color'}
-                value = {customcolor}
-                onChange={(value) => setAttributes({customcolor: value})}      
-                className="thetext"
-                />              
+                />            
             </div>                 
         );
     },
     save: (props) => {
-        let {attributes: {headerText,bodyText,customcolor} } = props;
+        let {attributes: {headerText,bodyText} } = props;
 
         return(
-            <div className= {'sectionsummary '} style={{backgroundColor: customcolor}}> 
+            <div className= "sectionsummary"> 
                 <RichText.Content
                 tagName="h3"
                 value = {headerText}            
@@ -102,4 +109,71 @@ registerBlockType('gtcb-blocks/custom-block6',{
             </div>                 
         );
     }
+});
+
+registerBlockType('gtcb-blocks/custom-block6',{
+    title:'VinylMaster Section Summary Dark',
+    icon: 'index-card',
+    category : 'common',
+
+    attributes: {
+        headerText: {
+            type: 'array',
+            source: 'children',
+            selector : 'h3'
+        },
+        bodyText: {
+            type: 'array',
+            source: 'children',
+            selector : '.thetext'
+        }
+    },
+
+    edit: (props) => {
+        let {attributes: {headerText,bodyText}, setAttributes } = props;
+
+        return(
+            <div className= "sectionsummary" style={{backgroundColor : "#DEDEDE"}}> 
+                <RichText
+                tagName="h3"
+                placeholder={'Header Text'}
+                value = {headerText}
+                onChange={(value) => setAttributes({headerText: value})}                
+                /> 
+                <RichText
+                tagName="div"
+                placeholder={'Body Text'}
+                value = {bodyText}
+                onChange={(value) => setAttributes({bodyText: value})}      
+                className="thetext"
+                />            
+            </div>                 
+        );
+    },
+    save: (props) => {
+        let {attributes: {headerText,bodyText} } = props;
+
+        return(
+            <div className= "sectionsummary" style={{backgroundColor : "#DEDEDE"}}> 
+                <RichText.Content
+                tagName="h3"
+                value = {headerText}            
+                /> 
+                <RichText.Content
+                tagName="div"
+                value = {bodyText}    
+                className="thetext"                
+                />             
+            </div>                 
+        );
+    }
+});
+
+registerBlockType('gtcb-blocks/custom-block7',{
+    title:'VinylMaster Pagejumper',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Pagejump/>),
+    save: () => (<Pagejump/>)
 });
