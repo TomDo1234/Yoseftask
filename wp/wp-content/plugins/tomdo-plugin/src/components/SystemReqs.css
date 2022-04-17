@@ -1,0 +1,9 @@
+.SystemReqs {
+    background: #3B393A;
+    color : #F3F3F3;
+    font-family: Proxima Nova;
+    font-size: 22px;
+    height:360px;
+    display: flex;
+    align-items: center;
+}

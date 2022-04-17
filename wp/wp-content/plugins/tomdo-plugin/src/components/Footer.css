@@ -89,3 +89,15 @@ span {
     width: 30px;
     background-image: url('./img/blue.svg');
 }
+
+.verybottomwrapper {
+    font-size: 0.88rem;
+    padding : 2rem 8.8rem 2rem 8.8em;
+    font-weight: 300;
+}
+
+.bottomdisclaimer {
+    margin-left:6%;
+    display:inline;
+}
+

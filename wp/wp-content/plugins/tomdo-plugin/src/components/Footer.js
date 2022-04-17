@@ -2,7 +2,7 @@ import './Footer.css';
 
 export default function Footer() {
     return(
-        <header className='thefooter'>
+        <div className='thefooter'>
             <div class = "row">
                 <div class = "col">
                     <div className="headcol">SHOP FOR</div>
@@ -61,20 +61,30 @@ export default function Footer() {
                     <div className="bottomrow">
                         <div className="recom">
                             <div className="blueicon"></div>
-                            <span>VinylMaster PRO</span>
+                            <span>&nbsp;&nbsp;VinylMaster PRO</span>
                         </div>
                         <div className="recom">
                             <div className="greenicon"></div>
-                            <span>VinylMaster DSR</span>
+                            <span>&nbsp;&nbsp;VinylMaster DSR</span>
                         </div>
                         <div className="recom">
                             <div className="orangeicon"></div>
-                            <span>VinylMaster XPT</span>
+                            <span>&nbsp;&nbsp;VinylMaster XPT</span>
                         </div>
                     </div>
                 </div>                
             </div>
-        </header>
+            <div className="verybottomwrapper">
+                © 1988-2022 a Future Corporation Pty Ltd. &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+                Privacy Policy&nbsp;&nbsp;/
+                Terms of Use&nbsp;&nbsp;/
+                Terms &amp; Conditions of Sale&nbsp;&nbsp;/
+                EULA
+                <div class="bottomdisclaimer">
+				    *Not all cutters and printers are supported. For more information on cutters and printers, click here. Subject to terms and conditions. 					
+                </div>        
+            </div>
+        </div>
     );
 }
 
