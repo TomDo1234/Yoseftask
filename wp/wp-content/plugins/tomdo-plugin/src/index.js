@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import LoveUsing from './components/LoveUsing';
 import Static1 from './components/Static1';
 import SystemReqs from './components/SystemReqs';
+import Goodideas from './components/Goodideas';
 
 registerBlockType('gtcb-blocks/custom-block',{
     title:'VinylMaster Footer',
@@ -48,4 +49,13 @@ registerBlockType('gtcb-blocks/custom-block5',{
 
     edit: () => (<SystemReqs/>),
     save: () => (<SystemReqs/>)
+});
+
+registerBlockType('gtcb-blocks/custom-block6',{
+    title:'VinylMaster GoodIdeas',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Goodideas/>),
+    save: () => (<Goodideas/>)
 });
