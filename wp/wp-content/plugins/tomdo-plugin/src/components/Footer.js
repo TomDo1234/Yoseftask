@@ -54,7 +54,26 @@ export default function Footer() {
                     <div>Dealers &amp; Resellers</div>
                     <div>Supported Cutters</div>
                 </div>
-            </div>  
+            </div>
+            <div className="bottomwrapper">
+                <div className="ourrecommendations">
+                    <h2>Our Recommendations</h2>
+                    <div className="bottomrow">
+                        <div className="recom">
+                            <div className="blueicon"></div>
+                            <span>VinylMaster PRO</span>
+                        </div>
+                        <div className="recom">
+                            <div className="greenicon"></div>
+                            <span>VinylMaster DSR</span>
+                        </div>
+                        <div className="recom">
+                            <div className="orangeicon"></div>
+                            <span>VinylMaster XPT</span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
         </header>
     );
 }

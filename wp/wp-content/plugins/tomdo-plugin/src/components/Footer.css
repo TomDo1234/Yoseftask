@@ -1,7 +1,7 @@
 .thefooter {
     width: 100%;
     background: #3B393A;  
-    color : #FFFFFF;  
+    color : #CBCBCB;  
 }
 
 .row {
@@ -20,8 +20,8 @@
     line-height: 1.75em;    
 }
 
-.col div:not(.headcol , .selectedprod) {
-    color: #CBCBCB;    
+.headcol , .selectedprod {
+    color: #FFFFFF;    
 }
 
 .col div {
@@ -33,4 +33,59 @@ div.headcol {
     font-weight:500;
     height:50px;
     cursor:default;
+}
+
+.bottomwrapper {
+    padding : 0rem 7rem 0rem 7em;
+}
+
+.ourrecommendations {
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: #FFFFFF;
+    padding: 1rem 0rem 1rem 0em;
+    display: flex;
+}
+
+.ourrecommendations h2 {
+    font-size: 1.125rem ;
+    font-weight: 600;
+    font-family: Proxima Nova;
+}
+
+.bottomrow {
+    display:flex;
+    margin-left: 2.5%;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.recom {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.orangeicon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('./img/orange.svg');
+}
+
+.greenicon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('./img/green.svg');
+}
+.blueicon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('./img/blue.svg');
 }
