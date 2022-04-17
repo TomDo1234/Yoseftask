@@ -162,11 +162,12 @@ function create_posttype() {
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'movies'),
+            'rewrite' => array('slug' => 'products'),
             'show_in_rest' => true,
 			'supports' => array('title','custom-fields','editor', 'page-attributes', 'thumbnail')
   
         )
+		
     );
 }
 // Hooking up our function to theme setup

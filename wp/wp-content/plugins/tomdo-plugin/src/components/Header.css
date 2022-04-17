@@ -12,6 +12,9 @@
     opacity: 1;
     padding: 1rem 0rem 1rem 0rem;
     display:flex;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #d3d3d3;  
 }
 
 .thelogo {
@@ -64,5 +67,10 @@
 }
 
 .downarrow {
-    background-image: url('img/arrow.svg');
+    content: url('img/arrow.svg');
+    height: 11px;
+    width: 12px;
+    background-size: contain;
+    float: right;
+    margin-top: 7%;
 }

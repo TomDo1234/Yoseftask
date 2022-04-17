@@ -5,10 +5,8 @@ export default function Header() {
         <header className='theheader'>
             <div className= "thelogo"></div>
             <div className= "headercontainer">
-                <div className= "headerlink">Products</div>
-                <div className= "downarrow"></div>
-                <div className= "headerlink">Industries</div>
-                <div className= "downarrow"></div>
+                <div className= "headerlink">Products&nbsp;&nbsp;<img className= "downarrow"/></div>                
+                <div className= "headerlink">Industries&nbsp;&nbsp;<img className= "downarrow"/></div>                
                 <div className= "headerlink">Pricing</div>
                 <div className= "headerlink">About</div>
                 <div className= "headerlink">Downloads</div>
