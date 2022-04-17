@@ -3,6 +3,30 @@
   color: #F3F3F3;
   font-family: Proxima Nova;
   font-size: 22px;
-  height: 360px;
-  display: flex;
-  align-items: center; }
+  height: 460px;
+  text-align: center; }
+  .SystemReqs h2 {
+    width: 100%;
+    display: block;
+    font-family: Proxima Nova;
+    font-size: 43px; }
+  .SystemReqs h3 {
+    width: 100%;
+    display: block;
+    font-family: Proxima Nova;
+    font-size: 22px; }
+  .SystemReqs .configholder {
+    display: flex;
+    align-items: center; }
+    .SystemReqs .configholder .colhalf {
+      width: 50%;
+      display: inline-block;
+      text-align: center; }
+    .SystemReqs .configholder ul {
+      width: fit-content;
+      display: inline-block; }
+      .SystemReqs .configholder ul li {
+        font-family: var(--wp--preset--font-family--system-font);
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 300; }
