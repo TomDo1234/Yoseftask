@@ -1,0 +1,33 @@
+.Accordion {
+  padding: 0 6.2rem 0 6.2rem;
+  font-family: Proxima Nova;
+  font-size: 25px;
+  margin-bottom: 10%;
+  cursor: pointer; }
+  .Accordion .item {
+    padding: 25px;
+    background: #dcd8e1 0% 0% no-repeat padding-box;
+    color: #2f204a;
+    border-bottom: 3px solid #2f204a; }
+    .Accordion .item .plus {
+      float: right;
+      margin-right: 2%; }
+    .Accordion .item .plus::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5px;
+      background-color: #3b393a;
+      height: 2rem;
+      transform-origin: center;
+      transition: transform 500ms ease;
+      transform: rotate(90deg); }
+    .Accordion .item .plus::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5px;
+      background-color: #3b393a;
+      height: 2rem;
+      transform-origin: center;
+      transition: transform 500ms ease; }

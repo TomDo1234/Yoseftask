@@ -12,6 +12,7 @@ import './components/Banner.css';
 import Triplesvg from './components/Triplesvg';
 import Gallery from './components/Gallery';
 import Featuretable from './components/Featuretable';
+import Accordion from './components/Accordion';
 const { withSelect } = wp.data;
 
 
@@ -256,4 +257,13 @@ registerBlockType('gtcb-blocks/custom-block12',{
 
     edit: () => (<Gallery/>),
     save: () => (<Gallery/>)
+});
+
+registerBlockType('gtcb-blocks/custom-block13',{
+    title:'VinylMaster Accordion',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Accordion/>),
+    save: () => (<Accordion/>)
 });

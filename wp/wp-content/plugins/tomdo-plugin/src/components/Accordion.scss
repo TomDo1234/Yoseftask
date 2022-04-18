@@ -1,0 +1,43 @@
+.Accordion {
+    padding: 0 6.2rem 0 6.2rem;
+    font-family: Proxima Nova;
+    font-size: 25px;
+    margin-bottom: 10%;
+    cursor:pointer;
+
+    .item {
+        padding: 25px;
+        background: #dcd8e1 0% 0% no-repeat padding-box;
+        color: #2f204a;
+        border-bottom: 3px solid #2f204a;        
+
+        .plus {
+            float:right;
+            margin-right: 2%;
+        }
+
+        .plus::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            background-color: rgb(59, 57, 58);
+            height: 2rem;
+            transform-origin: center;
+            transition: transform 500ms ease;
+            transform: rotate(90deg);
+        }
+
+        .plus::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            background-color: rgb(59, 57, 58);
+            height: 2rem;
+            transform-origin: center;
+            transition: transform 500ms ease;
+        }
+    }
+    
+}
