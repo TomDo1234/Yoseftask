@@ -8,6 +8,7 @@ import {RichText} from '@wordpress/block-editor';
 import './components/Sectionsummary.css';
 import Pagejump from './components/Pagejump';
 import Banner from './components/Banner';
+import './components/Banner.css';
 const { withSelect } = wp.data;
 
 
@@ -212,8 +213,16 @@ registerBlockType('gtcb-blocks/custom-block9',{
         };
      
         return(
-            <div style={blockStyle}>
-                    ... Your block content here...
+            <div style={blockStyle} className="Banner">  
+                <div className="container">
+                    <h2>VinylMaster CUT V5</h2>
+                    <h3>Basic Vinyl Cutting Software</h3>
+                    <div className="firstrow">
+                        <div className="roundbutton">Buy Now</div><div className="roundbutton">Upgrade To V5</div>
+                    </div>
+                    <br/>
+                    <div className="roundbutton download">Download FREE Demo</div>
+                </div>                  
             </div>
         );
     }

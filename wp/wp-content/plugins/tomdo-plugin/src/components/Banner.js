@@ -63,7 +63,7 @@ export default function Banner(props) {
 				</PanelBody>
 			</InspectorControls>
 			<div style={blockStyle}>
-				... Your block content here...
+				... Your banner image here...
 			</div>
 		</Fragment>
 	);
