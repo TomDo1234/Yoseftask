@@ -9,6 +9,7 @@ import './components/Sectionsummary.css';
 import Pagejump from './components/Pagejump';
 import Banner from './components/Banner';
 import './components/Banner.css';
+import Triplesvg from './components/Triplesvg';
 const { withSelect } = wp.data;
 
 
@@ -226,4 +227,13 @@ registerBlockType('gtcb-blocks/custom-block9',{
             </div>
         );
     }
+});
+
+registerBlockType('gtcb-blocks/custom-block10',{
+    title:'VinylMaster Triplesvg',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Triplesvg/>),
+    save: () => (<Triplesvg/>)
 });
