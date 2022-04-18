@@ -10,6 +10,8 @@ import Pagejump from './components/Pagejump';
 import Banner from './components/Banner';
 import './components/Banner.css';
 import Triplesvg from './components/Triplesvg';
+import Gallery from './components/Gallery';
+import Featuretable from './components/Featuretable';
 const { withSelect } = wp.data;
 
 
@@ -236,4 +238,13 @@ registerBlockType('gtcb-blocks/custom-block10',{
 
     edit: () => (<Triplesvg/>),
     save: () => (<Triplesvg/>)
+});
+
+registerBlockType('gtcb-blocks/custom-block11',{
+    title:'VinylMaster Feature Table',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Featuretable/>),
+    save: () => (<Featuretable/>)
 });
