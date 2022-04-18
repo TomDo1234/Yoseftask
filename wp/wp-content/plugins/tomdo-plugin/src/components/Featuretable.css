@@ -2,6 +2,30 @@
   display: grid;
   grid-template-columns: 10rem repeat(5, 1fr);
   padding: 0 7rem 0 7rem; }
+  .Featuretable .col .rowheading div {
+    margin: auto;
+    height: 39px;
+    width: 102px; }
+  .Featuretable .col .rowheading .vcut {
+    background-image: url("./img/VM CUT Logo.png");
+    height: 39px;
+    width: 102px; }
+  .Featuretable .col .rowheading .vltr {
+    background-image: url("./img/VM LTR Logo.png");
+    height: 39px;
+    width: 104px; }
+  .Featuretable .col .rowheading .vpro {
+    background-image: url("./img/VM PRO Logo.png");
+    height: 39px;
+    width: 108px; }
+  .Featuretable .col .rowheading .vdsr {
+    background-image: url("./img/VM DSR Logo.png");
+    height: 39px;
+    width: 108px; }
+  .Featuretable .col .rowheading .vxpt {
+    background-image: url("./img/VM XPT Logo.png");
+    height: 39px;
+    width: 104px; }
   .Featuretable .col .rowcontent {
     border: 1px solid #3b393a;
     padding: 30px 20px 41px 20px; }

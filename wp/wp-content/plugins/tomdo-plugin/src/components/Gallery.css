@@ -1,0 +1,32 @@
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  height: 2000px;
+  padding: 0 9rem 0 9rem; }
+  .Gallery .row {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .Gallery .row .col {
+      width: 48%;
+      font-weight: 300;
+      font-size: 17px; }
+      .Gallery .row .col div {
+        width: 100%;
+        height: 438px; }
+      .Gallery .row .col h3 {
+        font-size: 26px;
+        font-family: Proxima Nova; }
+      .Gallery .row .col .img1 {
+        background-image: url("./img/contour cutting.png"); }
+      .Gallery .row .col .img2 {
+        background-image: url("./img/drawing.png"); }
+      .Gallery .row .col .img3 {
+        background-image: url("./img/Fill-pen location.png"); }
+      .Gallery .row .col .img4 {
+        background-image: url("./img/Vinyl Cutting.png"); }
+      .Gallery .row .col .img5 {
+        background-image: url("./img/Project Management.png"); }
+      .Gallery .row .col .img6 {
+        background-image: url("./img/Display Modes.png"); }

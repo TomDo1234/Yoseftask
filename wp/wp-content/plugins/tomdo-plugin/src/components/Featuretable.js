@@ -5,7 +5,7 @@ export default function Featuretable() {
         <div className = "Featuretable">
             <div className = "col">
                 <div className = "rowheading">
-
+                    <div></div>
                 </div>
                 <div className = "rowcontent">
                     Overview
@@ -25,6 +25,7 @@ export default function Featuretable() {
             </div>
             <div className = "col">
                 <div className = "rowheading">
+                    <div className = "vcut"></div>
                 </div>
                 <div className = "rowcontent">  
                     
@@ -55,7 +56,7 @@ export default function Featuretable() {
             </div>
             <div className = "col">
                 <div className = "rowheading">
-
+                    <div className = "vltr"></div>
                 </div>
                 <div className = "rowcontent">                    
                     
@@ -88,7 +89,8 @@ export default function Featuretable() {
                 </div>
             </div>
             <div className = "col">
-                <div className = "rowheading">                   
+                <div className = "rowheading">   
+                    <div className = "vpro"></div>                
                 </div>
                 <div className = "rowcontent">
                     
@@ -122,7 +124,7 @@ export default function Featuretable() {
             </div>
             <div className = "col">
                 <div className = "rowheading">
-
+                    <div className = "vdsr"></div>
                 </div>
                 <div className = "rowcontent">
                     
@@ -158,7 +160,7 @@ export default function Featuretable() {
             </div>
             <div className = "col">
                 <div className = "rowheading">
-
+                    <div className = "vxpt"></div>
                 </div>
                 <div className = "rowcontent">
                 • Full Featured software offering the total solution for all design needs <br/>

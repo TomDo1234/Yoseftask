@@ -248,3 +248,12 @@ registerBlockType('gtcb-blocks/custom-block11',{
     edit: () => (<Featuretable/>),
     save: () => (<Featuretable/>)
 });
+
+registerBlockType('gtcb-blocks/custom-block12',{
+    title:'VinylMaster Gallery',
+    icon: 'index-card',
+    category : 'common',
+
+    edit: () => (<Gallery/>),
+    save: () => (<Gallery/>)
+});
