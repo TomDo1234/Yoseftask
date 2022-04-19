@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import '../../build/index.css';
 // 2. 👇
 const WpPageTemplate = ({ data: { wpPage } }) => {
   const { title, content } = wpPage;
