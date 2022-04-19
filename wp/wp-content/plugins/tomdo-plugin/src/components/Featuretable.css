@@ -2,64 +2,79 @@
   display: grid;
   grid-template-columns: 10rem repeat(5, 1fr);
   padding: 0 7rem 0 7rem; }
-  .Featuretable .col .rowheading div {
-    margin: auto;
-    height: 39px;
-    width: 102px; }
-  .Featuretable .col .rowheading .vcut {
-    background-image: url("./img/VM CUT Logo.png");
-    height: 39px;
-    width: 102px; }
-  .Featuretable .col .rowheading .vltr {
-    background-image: url("./img/VM LTR Logo.png");
-    height: 39px;
-    width: 104px; }
-  .Featuretable .col .rowheading .vpro {
-    background-image: url("./img/VM PRO Logo.png");
-    height: 39px;
-    width: 108px; }
-  .Featuretable .col .rowheading .vdsr {
-    background-image: url("./img/VM DSR Logo.png");
-    height: 39px;
-    width: 108px; }
-  .Featuretable .col .rowheading .vxpt {
-    background-image: url("./img/VM XPT Logo.png");
-    height: 39px;
-    width: 104px; }
-  .Featuretable .col .rowcontent {
-    border: 1px solid #3b393a;
-    padding: 30px 20px 41px 20px; }
-  .Featuretable .col .rowcontent:nth-child(2) {
-    height: 23.438rem;
-    background-color: #dcd8e1;
-    padding: 30px 20px 41px 20px; }
-  .Featuretable .col .rowcontent:nth-child(3) {
-    min-height: 5.188rem; }
-  .Featuretable .col .rowcontent:nth-child(4) {
-    height: 21.5rem;
-    background-color: #dcd8e1; }
-  .Featuretable .col .rowcontent:nth-child(5) {
-    height: 6.313rem; }
-  .Featuretable .col .rowcontent:nth-child(6) {
-    height: 17.188rem;
-    background-color: #dcd8e1; }
-  .Featuretable .col:first-child {
-    font-family: Proxima Nova;
-    font-size: 25px; }
-  .Featuretable .platforms-heading {
-    font-family: Proxima Nova;
-    font-size: 25px;
-    grid-column: 1 / 2;
-    padding: 10px 0 20px 20px;
-    border-left: 2px solid #3b393a;
-    border-bottom: 2px solid #3b393a;
-    border-top: 1px solid #3b393a; }
-  .Featuretable .platforms-content {
-    grid-column: 2 / span 5;
-    padding: 20px 0 0 20px;
-    border-bottom: 2px solid;
-    text-align: center;
-    align-content: center;
-    border-left: 2px solid;
-    border-right: 2px solid;
-    border-top: 1px solid; }
+
+.Featuretable .col .rowheading div {
+  margin: auto;
+  height: 39px;
+  width: 102px; }
+
+.Featuretable .col .rowheading .vcut {
+  background-image: url("./img/VM CUT Logo.png");
+  height: 39px;
+  width: 102px; }
+
+.Featuretable .col .rowheading .vltr {
+  background-image: url("./img/VM LTR Logo.png");
+  height: 39px;
+  width: 104px; }
+
+.Featuretable .col .rowheading .vpro {
+  background-image: url("./img/VM PRO Logo.png");
+  height: 39px;
+  width: 108px; }
+
+.Featuretable .col .rowheading .vdsr {
+  background-image: url("./img/VM DSR Logo.png");
+  height: 39px;
+  width: 108px; }
+
+.Featuretable .col .rowheading .vxpt {
+  background-image: url("./img/VM XPT Logo.png");
+  height: 39px;
+  width: 104px; }
+
+.Featuretable .col .rowcontent {
+  border: 1px solid #3b393a;
+  padding: 30px 20px 41px 20px; }
+
+.Featuretable .col .rowcontent:nth-child(2) {
+  height: 23.438rem;
+  background-color: #dcd8e1;
+  padding: 30px 20px 41px 20px; }
+
+.Featuretable .col .rowcontent:nth-child(3) {
+  min-height: 5.188rem; }
+
+.Featuretable .col .rowcontent:nth-child(4) {
+  height: 21.5rem;
+  background-color: #dcd8e1; }
+
+.Featuretable .col .rowcontent:nth-child(5) {
+  height: 6.313rem; }
+
+.Featuretable .col .rowcontent:nth-child(6) {
+  height: 17.188rem;
+  background-color: #dcd8e1; }
+
+.Featuretable .col:first-child {
+  font-family: Proxima Nova;
+  font-size: 25px; }
+
+.Featuretable .platforms-heading {
+  font-family: Proxima Nova;
+  font-size: 25px;
+  grid-column: 1 / 2;
+  padding: 10px 0 20px 20px;
+  border-left: 2px solid #3b393a;
+  border-bottom: 2px solid #3b393a;
+  border-top: 1px solid #3b393a; }
+
+.Featuretable .platforms-content {
+  grid-column: 2 / span 5;
+  padding: 20px 0 0 20px;
+  border-bottom: 2px solid;
+  text-align: center;
+  align-content: center;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 1px solid; }
