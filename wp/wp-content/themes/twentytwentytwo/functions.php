@@ -164,7 +164,10 @@ function create_posttype() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'products'),
             'show_in_rest' => true,
-			'supports' => array('title','custom-fields','editor', 'page-attributes', 'thumbnail')
+			'supports' => array('title','custom-fields','editor', 'page-attributes', 'thumbnail'),
+	     'show_in_graphql' => true,
+	      'graphql_single_name' => 'product',
+	      'graphql_plural_name' => 'products',
   
         )
 		
