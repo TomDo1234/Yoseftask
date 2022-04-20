@@ -12,11 +12,11 @@ export default function Accordion({data}) {
         <div className="Accordion">
             {
                 data.map((entry,i)  => {
-                    const {wpParent , name ,wpChildren} = entry;
+                    const {wpParent , name /*,wpChildren*/} = entry;
                     if (wpParent === null) {
                         return (     
                             <div key={`accordion-${name}`}>  
-                                <div className="item" onClick={() => {openaccordion(`accordion-${name}`)}}>
+                                <div className="item" onClick={() => {openaccordion(`accordion-${name}`)}} aria-hidden>
                                     {name}
                                     <div className="plus"></div>
                                 </div>
