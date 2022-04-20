@@ -14,8 +14,8 @@ function SystemReqs({productData}) {
                     <ul>
                         Minimum Computer Configuration
                         {
-                            systemRequirements.map(entry => 
-                                (entry.minimumComputerConfiguration !== null ? <li>{entry.minimumComputerConfiguration}</li> : ''))
+                            systemRequirements.map((entry,i)  => 
+                                (entry.minimumComputerConfiguration !== null ? <li key = {i}>{entry.minimumComputerConfiguration}</li> : ''))
                         }
                     </ul>                
                 </div>
@@ -23,8 +23,8 @@ function SystemReqs({productData}) {
                     <ul>
                         Recommended Computer Configuration
                         {
-                            systemRequirements.map(entry => 
-                                (entry.recommendedComputerConfiguration !== null ? <li>{entry.recommendedComputerConfiguration}</li> : ''))
+                            systemRequirements.map((entry,i)  => 
+                                (entry.recommendedComputerConfiguration !== null ? <li key = {i}>{entry.recommendedComputerConfiguration}</li> : ''))
                         }
                     </ul>                
                 </div>

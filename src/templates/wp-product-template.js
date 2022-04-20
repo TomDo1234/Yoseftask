@@ -10,20 +10,26 @@ import Footer from '../components/Footer';
 import Static1 from '../components/Static1';
 import LoveUsing from '../components/LoveUsing';
 import '../components/style.css'
+import Triplesvg from '../components/Triplesvg';
+import Featuretable from '../components/Featuretable';
+import Accordion from '../components/Accordion';
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
 const WpProductTemplate = ({ data: { wpProduct } }) => {
-  const {productData} = wpProduct;
+  const {productData,productFeatures} = wpProduct;
 // 3. 👇
   return (
     <section>
       <Banner data={productData.banner}/>
       <Pagejump/>
+      <Triplesvg data={productData.svgRepeater}/>
       <Sectionsummary data={productData.productIntro}/>
       <Sectionsummary data={productData.accordionIntro}/>
+      <Accordion data={productFeatures.nodes}/>
       <Sectionsummary data={productData.galleryIntro}/>
       <Gallery gallery={productData.gallery}/>
       <Sectionsummary data={productData.tableIntro}/>
+      <Featuretable data={productData.infoTable}/>
       <Sectionsummary data={productData.tableOutro}/>      
       <SystemReqs productData={productData}/>  
       <Static1 data={productData.downloadUpgradeBlock}/>
@@ -100,6 +106,34 @@ export const query = graphql`
           fieldGroupName
           heading
           subheading
+        }
+        svgRepeater {
+          bodyText
+          fieldGroupName
+          image {
+            sourceUrl
+          }
+        }
+        infoTable {
+          computerPlatform
+          info {
+            cut
+            dsr
+            infoLabel
+            ltr
+            pro
+            xpt
+          }
+        }
+      }
+      productFeatures {
+        nodes {
+          wpParent {
+            node {
+              name
+            }
+          }
+          name
         }
       }
     }

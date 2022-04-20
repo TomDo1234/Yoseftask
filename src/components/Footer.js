@@ -4,8 +4,8 @@ import React from 'react';
 export default function Footer() {
     return(
         <div className='thefooter'>
-            <div class = "row">
-                <div class = "col">
+            <div className = "row">
+                <div className = "col">
                     <div className="headcol">SHOP FOR</div>
                     <div className="selectedprod">VinylMaster CUT</div>
                     <div>VinylMaster LTR</div>
@@ -14,7 +14,7 @@ export default function Footer() {
                     <div>VinylMaster XPT</div>
                     <div>View Price List</div>
                 </div>
-                <div class = "col">
+                <div className= "col">
                     <div className="headcol">SHOP BY INDUSTRY</div>
                     <div>Craft &amp; Hobby</div>
                     <div>Box, Card &amp; Paper</div>
@@ -27,12 +27,12 @@ export default function Footer() {
                     <div>Government</div>
                     <div>Education</div>
                 </div>
-                <div class = "col">
+                <div className= "col">
                     <div className="headcol">SUPPORT</div>
                     <div>Help &amp; Support Centre</div>
                     <div>Lodge a Ticket</div>
                 </div>
-                <div class = "col">
+                <div className= "col">
                     <div className="headcol">FOR EDUCATION</div>
                     <div>Discount for Student and <br/> Teachers</div><br/>
                     <div>Schools and Universities</div>
@@ -43,7 +43,7 @@ export default function Footer() {
                     <div>OEM &amp; CustomWare</div>
                     <div>Corporate Inquiries</div>
                 </div>
-                <div class = "col">
+                <div className= "col">
                     <div className="headcol">VINYLMASTER ACCOUNT</div>
                     <div>Login to Customer Portal</div>
                     <div>Update Software</div>
@@ -81,7 +81,7 @@ export default function Footer() {
                 Terms of Use&nbsp;&nbsp;/
                 Terms &amp; Conditions of Sale&nbsp;&nbsp;/
                 EULA
-                <div class="bottomdisclaimer">
+                <div className="bottomdisclaimer">
 				    *Not all cutters and printers are supported. For more information on cutters and printers, click here. Subject to terms and conditions. 					
                 </div>        
             </div>

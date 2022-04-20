@@ -1,18 +1,24 @@
 .Featuretable {
-    display: grid;
-    grid-template-columns: 10rem repeat(5, 1fr);
+    display: flex;
+    flex-direction: column;
     padding: 0 7rem 0 7rem;
+    white-space: pre-wrap;
 
-    .col {
-        
-        .rowheading {
+    .row {
+        display: flex;
+
+        .colheading {
+            padding: 0 20px 0 20px;
+
+        }
+        .colheading:not(:first-child) {
+            
+            flex: 1 1 0;
+            width:0;
 
             div {
-                margin:auto;
-                height: 39px;
-                width: 102px;                
+                margin: auto;
             }
-
             .vcut {
                 background-image: url('./img/VM\ CUT\ Logo.png');
                 height: 39px;
@@ -40,38 +46,55 @@
             }
         }
 
-        .rowcontent {
+        .colheading:first-child {
+            width:7%;
+        }
+
+        .col {
+            
             border: 1px solid #3b393a;
             padding: 30px 20px 41px 20px;
         }
 
-        .rowcontent:nth-child(2) {
-            height: 23.438rem;
-            background-color: #dcd8e1;
-            padding: 30px 20px 41px 20px;
-          }
-        .rowcontent:nth-child(3) {
-            min-height: 5.188rem;
-          }
-          
-        .rowcontent:nth-child(4) {
-            height: 21.5rem;
-            background-color: #dcd8e1;
-          }
-          
-        .rowcontent:nth-child(5) {
-            height: 6.313rem;
-          }
-          
-        .rowcontent:nth-child(6) {
-            height: 17.188rem;
-            background-color: #dcd8e1;
-          }        
+        .col:first-child {
+            width:7%;
+            font-family: Proxima Nova;
+            font-size: 25px;
+        }
+
+        .col:not(:first-child) {
+            flex: 1 1 0;
+            width: 0;
+        }
+
+        
         
 
     }
 
-    .col:first-child {
+    .row:nth-of-type(2) {
+        height: 23.438rem;
+        background-color: #dcd8e1;
+      }
+    .row:nth-of-type(3) {
+        min-height: 5.188rem;
+      }
+      
+    .row:nth-of-type(4) {
+        height: 21.5rem;
+        background-color: #dcd8e1;
+      }
+      
+    .row:nth-of-type(5) {
+        height: 9.313rem;
+      }
+      
+    .row:nth-of-type(6) {
+        height: 12.188rem;
+        background-color: #dcd8e1;
+      }        
+
+    .row:first-child {
         font-family: Proxima Nova;
         font-size: 25px;
     }
@@ -80,7 +103,8 @@
         font-family: Proxima Nova;
         font-size: 25px;
         grid-column: 1 / 2;
-        padding: 10px 0 20px 20px;
+        width:7%;
+        padding: 10px 20px 20px 20px;
         border-left: 2px solid #3b393a;
         border-bottom: 2px solid #3b393a;
         border-top: 1px solid #3b393a;
@@ -95,7 +119,8 @@
         border-left: 2px solid;
         border-right: 2px solid;
         border-top: 1px solid;
+        flex-grow: 1;
     }
 
-}
 
+}

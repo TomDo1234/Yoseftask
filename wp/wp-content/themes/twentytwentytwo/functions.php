@@ -193,7 +193,7 @@ function add_custom_taxonomies() {
 		'update_item' => __( 'Update Product Feature' ),
 		'add_new_item' => __( 'Add New Product Feature' ),
 		'new_item_name' => __( 'New Product Feature Name' ),
-		'menu_name' => __( 'Product Features' ),
+		'menu_name' => __( 'Product Features' )
 	  ),
 	  // Control the slugs used for this taxonomy
 	  'rewrite' => array(
@@ -201,6 +201,10 @@ function add_custom_taxonomies() {
 		'with_front' => false, // Don't display the category base before "/product_feature/"
 		'hierarchical' => true // This will allow URL's like "/product_feature/boston/cambridge/"
 	  ),
+	  'show_in_graphql' => true,
+	  'graphql_single_name' => 'productFeature',
+      'graphql_plural_name' => 'productFeatures',
+	  'show_in_rest'      => true,
 	));
   }
   add_action( 'init', 'add_custom_taxonomies', 0 );

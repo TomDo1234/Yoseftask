@@ -6,11 +6,10 @@ export default function Gallery({gallery}) {
     return(
         <div className="Gallery">
             {
-                    gallery.map(entry => {
+                    gallery.map((entry,i)  => {
                         const {header,bodyText,image} = entry;
-                        console.log(header);
                         return (
-                            <div className="col">
+                            <div className="col" key = {i}>
                                 <div style={{backgroundImage : `url(${image.sourceUrl})`}}></div>
                                 <h3>{header}</h3>
                                 {bodyText}
