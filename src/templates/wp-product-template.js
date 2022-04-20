@@ -16,7 +16,7 @@ import Accordion from '../components/Accordion';
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
 const WpProductTemplate = ({ data: { wpProduct } }) => {
-  const {productData,productFeatures} = wpProduct;
+  const {productData,productFeatures,blocks} = wpProduct;
 // 3. 👇
   return (
     <section>
@@ -140,6 +140,9 @@ export const query = graphql`
           }
           name
         }
+      }
+      blocks {
+        name
       }
     }
   }
