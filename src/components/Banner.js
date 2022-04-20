@@ -1,70 +1,19 @@
-const { MediaUpload, MediaUploadCheck , InspectorControls } = wp.blockEditor;
-const { ResponsiveWrapper,Button , PanelBody } = wp.components;
-const { Fragment } = wp.element;
+import React from "react";
 
-export default function Banner(props) {
-	const { attributes, setAttributes } = props;
-
-    const onSelectMedia = (media) => {
-		props.setAttributes({
-			mediaId: media.id,
-			mediaUrl: media.url
-		});
-	}
-
-    const blockStyle = {
-		backgroundImage: attributes.mediaUrl != '' ? 'url("' + attributes.mediaUrl + '")' : 'none'
-	};
-
-    const removeMedia = () => {
-        props.setAttributes({
-            mediaId: 0,
-            mediaUrl: ''
-        });
-    }
+export default function Banner({data}) {
+	const { image , heading , subheading } = data;
  
 	return (
-		<Fragment>
-			<InspectorControls>
-				<PanelBody
-					title={'Select block background image'}
-					initialOpen={ true }
-				>
-					<div className="editor-post-featured-image">						
-                        <MediaUploadCheck>
-                            <MediaUpload
-                                onSelect={onSelectMedia}
-                                value={attributes.mediaId}
-                                allowedTypes={ ['image'] }
-                                render={({open}) => (
-                                    <Button 
-                                        className={attributes.mediaId == 0 ? 'editor-post-featured-image__toggle' : 'editor-post-featured-image__preview'}
-                                        onClick={open}
-                                    >
-                                        {attributes.mediaId == 0 && 'Choose an image'}
-                                        {props.media != undefined && 
-                                            <ResponsiveWrapper
-                                                    naturalWidth={ props.media.media_details.width }
-                                                naturalHeight={ props.media.media_details.height }
-                                                >
-                                                    <img src={props.media.source_url} />
-                                                </ResponsiveWrapper>
-                                        }
-                                    </Button>
-                                )}
-                            />
-                        </MediaUploadCheck>
-                        {attributes.mediaId != 0 && 
-                            <MediaUploadCheck>
-                                <Button onClick={removeMedia} isLink isDestructive>{'Remove image'}</Button>
-                            </MediaUploadCheck>
-                        }
-					</div>
-				</PanelBody>
-			</InspectorControls>
-			<div style={blockStyle}>
-				... Your banner image here...
-			</div>
-		</Fragment>
+        <div className="Banner" style = {{backgroundImage: `url(${image.sourceUrl})`}}>  
+                <div className="container">
+                    <h2>{heading}</h2>
+                    <h3>{subheading}</h3>
+                    <div className="firstrow">
+                        <div className="roundbutton">Buy Now</div><div className="roundbutton">Upgrade To V5</div>
+                    </div>
+                    <br/>
+                    <div className="roundbutton download">Download FREE Demo</div>
+                </div>                  
+            </div>
 	);
 }
