@@ -1,0 +1,70 @@
+.thefooter {
+  width: 100%;
+  background: #3B393A;
+  color: #CBCBCB; }
+  .thefooter .row {
+    display: flex;
+    width: calc(100% - 19.2rem);
+    justify-content: space-between;
+    padding: 5rem 9rem 5rem 9em; }
+    .thefooter .row .col {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.75em; }
+      .thefooter .row .col div.headcol {
+        font-weight: 500;
+        height: 50px;
+        cursor: default; }
+      .thefooter .row .col .headcol, .thefooter .row .col .selectedprod {
+        color: #FFFFFF; }
+      .thefooter .row .col div {
+        height: 40px;
+        cursor: pointer; }
+  .thefooter .bottomwrapper {
+    padding: 0rem 7rem 0rem 7em; }
+    .thefooter .bottomwrapper .ourrecommendations {
+      border-style: solid;
+      border-width: 2px 0px 2px 0px;
+      border-color: #FFFFFF;
+      padding: 1rem 0rem 1rem 0em;
+      display: flex; }
+      .thefooter .bottomwrapper .ourrecommendations h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        font-family: Proxima Nova; }
+      .thefooter .bottomwrapper .ourrecommendations .bottomrow {
+        display: flex;
+        margin-left: 2.5%;
+        justify-content: space-between;
+        width: 500px; }
+        .thefooter .bottomwrapper .ourrecommendations .bottomrow .recom {
+          display: flex;
+          align-items: center; }
+          .thefooter .bottomwrapper .ourrecommendations .bottomrow .recom .orangeicon {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-image: url("./img/orange.svg"); }
+          .thefooter .bottomwrapper .ourrecommendations .bottomrow .recom .greenicon {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-image: url("./img/green.svg"); }
+          .thefooter .bottomwrapper .ourrecommendations .bottomrow .recom .blueicon {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-image: url("./img/blue.svg"); }
+  .thefooter .verybottomwrapper {
+    font-size: 0.88rem;
+    padding: 2rem 8.8rem 2rem 8.8em;
+    font-weight: 300; }
+    .thefooter .verybottomwrapper .bottomdisclaimer {
+      margin-left: 6%;
+      display: inline; }
+  .thefooter span {
+    font-weight: 300;
+    font-size: 16px; }

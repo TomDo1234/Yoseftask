@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url("./fonts/FontsFree-Net-Proxima-Nova-Sbold.otf"); }
+
+.theheader {
+  top: 0px;
+  left: -1px;
+  width: 100%;
+  height: 72px;
+  background: #FFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 1rem 0rem 1rem 0rem;
+  display: flex;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d3d3d3; }
+
+.theheader .thelogo {
+  /* Layout Properties */
+  top: 19px;
+  left: 105px;
+  width: 286px;
+  height: 74px;
+  /* UI Properties */
+  background: transparent url("img/Logo.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  float: left;
+  margin-left: 5%;
+  cursor: pointer; }
+
+.theheader .headercontainer {
+  display: flex;
+  justify-content: space-between;
+  font: normal normal 600 18px/26px Proxima Nova;
+  color: #2F204A;
+  padding: 0% 4.5% 0% 4.5%;
+  height: 100%;
+  align-items: center;
+  width: 57%; }
+
+.theheader .headercontainer .headerlink {
+  cursor: pointer; }
+
+.theheader .headercontainer .headerlink .downarrow {
+  content: url("img/arrow.svg");
+  height: 11px;
+  width: 12px;
+  background-size: contain;
+  float: right;
+  margin-top: 7%;
+  cursor: pointer; }
+
+.theheader .theshoppingbag {
+  background-image: url("img/shopping_bag.svg");
+  width: 50px;
+  height: 50px;
+  width: 24px;
+  height: 31px;
+  background-size: contain;
+  margin-top: 17px;
+  margin-left: 4.8%;
+  cursor: pointer; }

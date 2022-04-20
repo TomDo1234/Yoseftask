@@ -4,7 +4,8 @@
   "description": "",
   "main": "gatsby-config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./src/components -o ./src/components"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^4.12.1",
-    "gatsby-source-wordpress": "^6.12.2"
+    "gatsby-source-wordpress": "^6.12.2",
+    "node-sass": "^7.0.1"
   }
 }

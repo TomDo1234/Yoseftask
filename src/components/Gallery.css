@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url("./fonts/FontsFree-Net-Proxima-Nova-Sbold.otf"); }
+
+.Gallery {
+  display: grid;
+  padding: 0 9rem 0 9rem;
+  grid-template-columns: 50% 50%;
+  column-gap: 4rem; }
+
+.Gallery .col {
+  font-weight: 300;
+  font-size: 17px; }
+
+.Gallery .col div {
+  width: 100%;
+  height: 438px; }
+
+.Gallery .col h3 {
+  font-size: 26px;
+  font-family: Proxima Nova; }

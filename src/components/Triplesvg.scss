@@ -1,0 +1,33 @@
+.Triplesvg {
+    display:flex;
+    justify-content: space-between;
+    height:460px;
+    padding: 6rem 10rem 6rem 10rem;
+    text-align: center;
+    .col {
+        display:flex;
+        flex-direction: column;
+        height:100%;
+        width:26%;
+        .svg1 {
+            margin-top: 40px;
+            height:246px;
+            width:352px;
+            background-size: cover;
+            background-image: url("./img/Help\ &\ Tools\ Symbol.png");
+        }
+        .svg2 {
+            height:294px;
+            width:319px;
+            background-size: cover;
+            background-image: url("./img/DIY\ Artwork\ Symbol.png");
+        }
+        .svg3 {
+            margin-top: 23px;
+            height:267px;
+            width:336px;
+            background-size: cover;
+            background-image: url("./img/Sending\ Artwork\ Symbol.png");
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.Banner {
+    height: 505px;
+    width: 93%;
+    padding: 4% 0 0 7%;
+    .container {
+        display: flex;
+        flex-direction: column;
+        height:40%;
+        font-family: Proxima Nova;
+        .firstrow {
+            display: flex;
+            justify-content: space-between;
+            width:18%;
+        }
+        .roundbutton {
+            border: solid #3B393A;
+            width: fit-content;
+            display: inline-block;
+            border-radius: 50px;
+            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+            background: #FFFFFF;
+        }
+        .roundbutton.download {
+            width:15%;
+            text-align: center;
+        }
+        h2 {
+            font-family: Proxima Nova;
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: Proxima Nova;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 4.2%;
+        }
+    }
+}
