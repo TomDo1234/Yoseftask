@@ -1,14 +1,15 @@
 import './Static1.css';
+import React from 'react';
 
-export default function Static1() {
+export default function Static1({data}) {
     return(
         <div className='static1'>
             <div className="colhalf">
-                <div>VinylMaster CUT just isn't Cutting <br/> it Anymore? Lets Upgrade!</div>
+                <div>{data.upgradeText}</div>
                 <div className="roundbutton">Upgrade</div>
             </div>
             <div className="colhalf">
-                <div>Start Your Design Journey with, <br/>  VinylMaster CUT</div>
+                <div>{data.downloadText}</div>
                 <div className="roundbutton">Download FREE Demo</div>
             </div>
         </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 //import '../../wp/wp-content/plugins/tomdo-plugin/build/index.css';
-import '../style.css';
 import SystemReqs from '../components/SystemReqs';
 import Gallery from '../components/Gallery';
 import Sectionsummary from '../components/Sectionsummary';
 import Pagejump from '../components/Pagejump';
 import Banner from '../components/Banner';
+import Footer from '../components/Footer';
+import Static1 from '../components/Static1';
+import LoveUsing from '../components/LoveUsing';
+import '../components/style.css'
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
 const WpProductTemplate = ({ data: { wpProduct } }) => {
@@ -22,7 +25,10 @@ const WpProductTemplate = ({ data: { wpProduct } }) => {
       <Gallery gallery={productData.gallery}/>
       <Sectionsummary data={productData.tableIntro}/>
       <Sectionsummary data={productData.tableOutro}/>      
-      <SystemReqs productData={productData}/>      
+      <SystemReqs productData={productData}/>  
+      <Static1 data={productData.downloadUpgradeBlock}/>
+      <LoveUsing data={productData.reviewBlock}/>
+      <Footer/>    
     </section>
   );
 };
@@ -83,6 +89,17 @@ export const query = graphql`
           image {
             sourceUrl
           }
+        }
+        downloadUpgradeBlock {
+          downloadText
+          fieldGroupName
+          upgradeText
+        }
+        reviewBlock {
+          bodyText
+          fieldGroupName
+          heading
+          subheading
         }
       }
     }
