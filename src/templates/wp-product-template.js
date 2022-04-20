@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import '../../build/index.css';
+import '../../wp/wp-content/plugins/tomdo-plugin/build/index.css';
 import '../style.css';
 
 // 2. 👇

@@ -1,0 +1,24 @@
+{
+  "name": "gatsbyyosef",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gatsby-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomDo1234/yoseftask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomDo1234/yoseftask/issues"
+  },
+  "homepage": "https://github.com/TomDo1234/yoseftask#readme",
+  "dependencies": {
+    "gatsby": "^4.12.1",
+    "gatsby-plugin-gatsby-cloud": "^4.12.1",
+    "gatsby-source-wordpress": "^6.12.2"
+  }
+}
