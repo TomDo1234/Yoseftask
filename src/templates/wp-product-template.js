@@ -133,6 +133,11 @@ export const query = graphql`
               name
             }
           }
+          wpChildren {
+            nodes {
+              name
+            }
+          }
           name
         }
       }

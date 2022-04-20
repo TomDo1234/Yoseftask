@@ -6,14 +6,19 @@ export default function Accordion({data}) {
         <div className="Accordion">
             {
                 data.map((entry,i)  => {
-                    const {wpParent , name} = entry;
-                    if (wpParent.node.length === 0) {
+                    const {wpParent , name ,wpChildren} = entry;
+                    if (wpParent === null) {
                         console.log(123);
-                        return (        
+                        return (     
+                            <>  
                             <div className="item">
                                 {name}
                                 <div className="plus"></div>
                             </div>
+                            <div className="itemcontent">
+                                {name}
+                            </div>
+                            </> 
                         )
                     }
                     return '';                  
