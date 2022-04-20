@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-wp-product-template-js",
+    "path": "/products/vinylmaster-pro-professional/",
+    "result": {"data":{"wpProduct":{"content":null,"productData":{"fieldGroupName":"productData","productIntro":{"bodyText":null,"fieldGroupName":"product_intro","header":null,"color":null},"gallery":null,"systemRequirements":null,"galleryIntro":null,"tableOutro":null,"tableIntro":null,"accordionIntro":null,"banner":null,"downloadUpgradeBlock":null,"reviewBlock":null,"svgRepeater":null,"infoTable":null},"productFeatures":null}},"pageContext":{"id":"cG9zdDo5"}},
+    "staticQueryHashes": []}

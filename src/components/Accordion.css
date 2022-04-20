@@ -37,4 +37,37 @@
   transition: transform 500ms ease; }
 
 .Accordion .itemcontent {
-  display: none; }
+  display: none;
+  background: white;
+  color: #9e8eb9; }
+
+.Accordion .itemcontent ul {
+  padding: 6.25rem 10rem 0 10rem;
+  list-style-type: none;
+  margin: 0; }
+
+.Accordion .itemcontent ul li {
+  color: #9e8eb9;
+  border-bottom: 3px solid #9e8eb9;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #9e8eb9;
+  text-align: center; }
+
+.Accordion .itemcontent ul li .imageholder {
+  border: 3px solid #9e8eb9;
+  display: inline-block;
+  height: 80px;
+  border-radius: 27px; }
+
+.Accordion .itemcontent ul img {
+  filter: invert(61%) sepia(4%) saturate(2427%) hue-rotate(220deg) brightness(96%) contrast(87%); }
+
+.Accordion .itemcontent.open {
+  display: block; }
+
+.Accordion h5 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-family: Proxima Nova; }

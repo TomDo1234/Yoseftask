@@ -41,7 +41,43 @@
     }
 
     .itemcontent {
-        display: none;
+        display: none;  
+        background: white;  
+        color : #9e8eb9;  
+        ul {
+            padding: 6.25rem 10rem 0 10rem;
+            list-style-type: none;
+            margin:0;
+            li {
+                color : #9e8eb9; 
+                border-bottom: 3px solid #9e8eb9;
+                border-bottom-width: 3px;
+                border-bottom-style: solid;
+                border-bottom-color: rgb(158, 142, 185);
+                text-align: center;
+                .imageholder {
+                    border: 3px solid #9e8eb9;  
+                    display:inline-block;
+                    height:80px;
+                    border-radius: 27px;
+                }
+            }  
+            img {
+                filter: invert(61%) sepia(4%) saturate(2427%) hue-rotate(220deg) brightness(96%) contrast(87%);
+                
+            }
+        }        
+    }
+
+    .itemcontent.open {
+        display:block;
+    }
+
+    h5 {
+        margin-top: 0;
+        margin-bottom: 0.7rem;
+        text-align: center;
+        font-family: Proxima Nova;
     }
     
 }
