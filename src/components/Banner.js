@@ -2,7 +2,6 @@ import React from "react";
 import './Banner.css';
 
 export default function Banner({data}) {
-    console.log(data);
 	return (
         <div style={{backgroundImage : `url(${data.image.sourceUrl})`}} className="Banner">  
                 <div className="container">

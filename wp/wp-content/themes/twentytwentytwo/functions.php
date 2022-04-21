@@ -151,65 +151,6 @@ add_action( 'wp_head', 'twentytwentytwo_preload_webfonts' );
 require get_template_directory() . '/inc/block-patterns.php';
 
 // Our custom post type function
-function create_posttype() {
-  
-    register_post_type( 'products',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Products' ),
-                'singular_name' => __( 'Product' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'products'),
-            'show_in_rest' => true,
-			'supports' => array('title','custom-fields','editor', 'page-attributes', 'thumbnail'),
-	     'show_in_graphql' => true,
-	      'graphql_single_name' => 'product',
-	      'graphql_plural_name' => 'products',
-  
-        )
-		
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
-function add_custom_taxonomies() {
-	// Add new "Product Features" taxonomy to Posts
-	register_taxonomy('product_feature', 'products', array(
-	  // Hierarchical taxonomy (like categories)
-	  'hierarchical' => true,
-	  // This array of options controls the labels displayed in the WordPress Admin UI
-	  'labels' => array(
-		'name' => _x( 'Product Features', 'taxonomy general name' ),
-		'singular_name' => _x( 'Product Feature', 'taxonomy singular name' ),
-		'search_items' =>  __( 'Search Product Feature' ),
-		'all_items' => __( 'All Product Features' ),
-		'parent_item' => __( 'Parent Product Feature' ),
-		'parent_item_colon' => __( 'Parent Product Feature:' ),
-		'edit_item' => __( 'Edit Product Feature' ),
-		'update_item' => __( 'Update Product Feature' ),
-		'add_new_item' => __( 'Add New Product Feature' ),
-		'new_item_name' => __( 'New Product Feature Name' ),
-		'menu_name' => __( 'Product Features' )
-	  ),
-	  // Control the slugs used for this taxonomy
-	  'rewrite' => array(
-		'slug' => 'product_feature', // This controls the base slug that will display before each term
-		'with_front' => false, // Don't display the category base before "/product_feature/"
-		'hierarchical' => true // This will allow URL's like "/product_feature/boston/cambridge/"
-	  ),
-	  'show_in_graphql' => true,
-	  'graphql_single_name' => 'productFeature',
-      'graphql_plural_name' => 'productFeatures',
-	  'show_in_rest'      => true,
-	));
-  }
-  add_action( 'init', 'add_custom_taxonomies', 0 );
-
-  remove_filter( 'render_block', 'wp_render_layout_support_flag', 10, 2 ); //removes the annoying automargin
 
 
   

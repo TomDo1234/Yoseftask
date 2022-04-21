@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 //import '../../wp/wp-content/plugins/tomdo-plugin/build/index.css';
 import SystemReqs from '../components/SystemReqs';
@@ -15,9 +15,10 @@ import Featuretable from '../components/Featuretable';
 import Accordion from '../components/Accordion';
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
-const WpProductTemplate = ({ data: { wpProduct } }) => {
+const WpProductTemplate = ({ data: { wpProduct ,wp } }) => {
 
   const {productData,productFeatures,blocks} = wpProduct;
+  const {acfOptionsOptions} = wp;
 // 3. 👇
   return (
     <section>
@@ -45,7 +46,7 @@ const WpProductTemplate = ({ data: { wpProduct } }) => {
             case "gtcb-blocks/custom-block12":
               return <Gallery gallery={productData.gallery} key = {`${block.name}-${i}`}/>
             case "gtcb-blocks/custom-block13":
-              return <Accordion data={productFeatures.nodes} key = {`${block.name}-${i}`}/>
+              return <Accordion data={productFeatures.nodes} accordiondata = {acfOptionsOptions.accordionData} key = {`${block.name}-${i}`}/>
             default:
               return <div className="dangeroushtmlwrapper" dangerouslySetInnerHTML={{__html : block.originalContent}} key = {`${block.name}-${i}`}/>
           }
@@ -161,6 +162,20 @@ export const query = graphql`
       blocks {
         name
         originalContent
+      }
+    }
+    wp {
+      acfOptionsOptions {
+        accordionData {
+          iconForFeature {
+            feature {
+              name
+            }
+            icon {
+              sourceUrl
+            }
+          }
+        }
       }
     }
   }
