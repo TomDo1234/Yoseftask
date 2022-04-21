@@ -41,24 +41,29 @@
   background: white; }
 
 .Accordion .itemcontent ul {
+  display: flex;
   padding: 6.25rem 10rem 0 10rem;
   list-style-type: none;
   margin: 0; }
 
 .Accordion .itemcontent ul li {
+  flex: 1 1 0;
   text-align: center;
   border-bottom-width: 3px;
   border-bottom-style: solid; }
+
+.Accordion .itemcontent ul li .imageholder {
+  border: 3px solid;
+  display: inline-block;
+  height: 80px;
+  border-radius: 27px; }
 
 .Accordion .itemcontent ul li.selected {
   color: #9e8eb9;
   border-bottom-color: #9e8eb9; }
 
 .Accordion .itemcontent ul li.selected .imageholder {
-  border: 3px solid #9e8eb9;
-  display: inline-block;
-  height: 80px;
-  border-radius: 27px; }
+  border-color: #9e8eb9; }
 
 .Accordion .itemcontent ul li.selected .imageholder img {
   filter: invert(61%) sepia(4%) saturate(2427%) hue-rotate(220deg) brightness(96%) contrast(87%); }
