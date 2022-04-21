@@ -1,4 +1,3 @@
-import './Triplesvg.css';
 import React from 'react';
 
 export default function Triplesvg({data}) {

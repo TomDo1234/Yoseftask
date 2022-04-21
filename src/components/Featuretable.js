@@ -1,4 +1,3 @@
-import './Featuretable.css';
 import React from 'react';
 
 export default function Featuretable({data}) {

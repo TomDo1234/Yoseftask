@@ -1,4 +1,3 @@
-import './SystemReqs.css';
 import React from 'react';
 
 function SystemReqs({productData}) {

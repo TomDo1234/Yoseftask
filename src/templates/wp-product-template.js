@@ -7,12 +7,12 @@ import Pagejump from '../components/Pagejump';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Static1 from '../components/Static1';
-import '../components/Sectionsummary.css'
 import LoveUsing from '../components/LoveUsing';
-import '../components/style.css'
+import '../style.css';
 import Triplesvg from '../components/Triplesvg';
 import Featuretable from '../components/Featuretable';
 import Accordion from '../components/Accordion';
+import Header from '../components/Header';
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
 const WpProductTemplate = ({ data: { wpProduct ,wp } }) => {
@@ -27,8 +27,8 @@ const WpProductTemplate = ({ data: { wpProduct ,wp } }) => {
           switch(block.name) {
             case "gtcb-blocks/custom-block":
               return <Footer key = {`${block.name}-${i}`}/>   
-            case "gtcb-blocks/custom-block2":              
-              break;
+            case "gtcb-blocks/custom-block2":   
+              return <Header/>
             case "gtcb-blocks/custom-block3":
               return <LoveUsing data={productData.reviewBlock} key = {`${block.name}-${i}`}/>   
             case "gtcb-blocks/custom-block4":
@@ -50,7 +50,6 @@ const WpProductTemplate = ({ data: { wpProduct ,wp } }) => {
             default:
               return <div className="dangeroushtmlwrapper" dangerouslySetInnerHTML={{__html : block.originalContent}} key = {`${block.name}-${i}`}/>
           }
-          return '';
         })
       } 
     </section>

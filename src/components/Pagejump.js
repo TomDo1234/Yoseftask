@@ -1,5 +1,4 @@
 import React from "react";
-import './Pagejump.css';
 
 export default function Pagejump() {
     return(

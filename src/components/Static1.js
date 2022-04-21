@@ -1,4 +1,3 @@
-import './Static1.css';
 import React from 'react';
 
 export default function Static1({data}) {

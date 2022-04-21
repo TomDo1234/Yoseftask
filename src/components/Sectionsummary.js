@@ -1,4 +1,3 @@
-import './Sectionsummary.css';
 import React from 'react';
 
 export default function Sectionsummary({data}) {

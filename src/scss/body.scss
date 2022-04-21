@@ -1,9 +1,9 @@
 @font-face {
   font-family: Proxima Nova;
-  src: url("./fonts/FontsFree-Net-Proxima-Nova-Sbold.otf"); }
+  src: url("./components/fonts/FontsFree-Net-Proxima-Nova-Sbold.otf"); }
 @font-face {
   font-family:  Proxima Nova Regular;
-  src: url('./fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf');
+  src: url('./components/fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf');
 }
 
 body {
@@ -13,9 +13,10 @@ body {
     font-size: 1.125rem;
     margin:0;
     white-space: pre;
+  
+    h3 {
+      font-size: clamp(2.25rem, 4vw, 2.75rem); 
+    }
 
 }
 
-h3 {
-  font-size: clamp(2.25rem, 4vw, 2.75rem); 
-}
