@@ -38,33 +38,71 @@
 
 .Accordion .itemcontent {
   display: none;
-  background: white;
-  color: #9e8eb9; }
+  background: white; }
 
 .Accordion .itemcontent ul {
+  display: flex;
   padding: 6.25rem 10rem 0 10rem;
   list-style-type: none;
   margin: 0; }
 
 .Accordion .itemcontent ul li {
-  color: #9e8eb9;
-  border-bottom: 3px solid #9e8eb9;
+  flex: 1 1 0;
+  text-align: center;
   border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: #9e8eb9;
-  text-align: center; }
+  border-bottom-style: solid; }
 
 .Accordion .itemcontent ul li .imageholder {
-  border: 3px solid #9e8eb9;
+  border: 3px solid;
   display: inline-block;
   height: 80px;
   border-radius: 27px; }
 
-.Accordion .itemcontent ul img {
+.Accordion .itemcontent ul li.selected {
+  color: #9e8eb9;
+  border-bottom-color: #9e8eb9; }
+
+.Accordion .itemcontent ul li.selected .imageholder {
+  border-color: #9e8eb9; }
+
+.Accordion .itemcontent ul li.selected .imageholder img {
   filter: invert(61%) sepia(4%) saturate(2427%) hue-rotate(220deg) brightness(96%) contrast(87%); }
 
+.Accordion .itemcontent .hidden {
+  display: none; }
+
+.Accordion .itemcontent .contentholder {
+  white-space: normal;
+  padding: 0 10rem 0 10rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: Proxima Nova Regular;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.Accordion .itemcontent .contentholder .monitorimage {
+  margin-top: 20px;
+  height: 545px; }
+
+.Accordion .itemcontent .contentholder .monitorimage img {
+  position: relative;
+  top: 10px;
+  left: 0.91%;
+  height: 415px;
+  width: 739px; }
+
+.Accordion .itemcontent .contentholder .monitorimage::before {
+  content: "";
+  background-image: url("./img/monitor.png");
+  height: 570px;
+  width: 761px;
+  position: absolute;
+  left: calc(50% - width/2); }
+
 .Accordion .itemcontent.open {
-  display: block; }
+  display: block;
+  overflow: auto; }
 
 .Accordion h5 {
   margin-top: 0;

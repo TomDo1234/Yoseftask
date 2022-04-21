@@ -38,3 +38,12 @@ exports.createPages = async ({ graphql, actions }) => {
         });
       });
   };
+  exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;  //prevents a current bug in gatsby where it doesnt work woth graphqlgutenberg
+    const typeDefs = `    
+      type WpBlockAttributesObject {
+        foobar: String
+      }
+    `;
+    createTypes(typeDefs);
+  };

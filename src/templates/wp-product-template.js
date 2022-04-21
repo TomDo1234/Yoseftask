@@ -3,11 +3,11 @@ import { graphql } from 'gatsby';
 //import '../../wp/wp-content/plugins/tomdo-plugin/build/index.css';
 import SystemReqs from '../components/SystemReqs';
 import Gallery from '../components/Gallery';
-import Sectionsummary from '../components/Sectionsummary';
 import Pagejump from '../components/Pagejump';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Static1 from '../components/Static1';
+import '../components/Sectionsummary.css'
 import LoveUsing from '../components/LoveUsing';
 import '../components/style.css'
 import Triplesvg from '../components/Triplesvg';
@@ -15,26 +15,44 @@ import Featuretable from '../components/Featuretable';
 import Accordion from '../components/Accordion';
 // just commenting here for later use <div dangerouslySetInnerHTML={{ __html: content }} />
 // 2. 👇 
-const WpProductTemplate = ({ data: { wpProduct } }) => {
-  const {productData,productFeatures} = wpProduct;
+const WpProductTemplate = ({ data: { wpProduct ,wp } }) => {
+
+  const {productData,productFeatures,blocks} = wpProduct;
+  const {acfOptionsOptions} = wp;
 // 3. 👇
   return (
     <section>
-      <Banner data={productData.banner}/>
-      <Pagejump/>
-      <Triplesvg data={productData.svgRepeater}/>
-      <Sectionsummary data={productData.productIntro}/>
-      <Sectionsummary data={productData.accordionIntro}/>
-      <Accordion data={productFeatures.nodes}/>
-      <Sectionsummary data={productData.galleryIntro}/>
-      <Gallery gallery={productData.gallery}/>
-      <Sectionsummary data={productData.tableIntro}/>
-      <Featuretable data={productData.infoTable}/>
-      <Sectionsummary data={productData.tableOutro}/>      
-      <SystemReqs productData={productData}/>  
-      <Static1 data={productData.downloadUpgradeBlock}/>
-      <LoveUsing data={productData.reviewBlock}/>
-      <Footer/>    
+      {
+        blocks.map((block,i) => {
+          switch(block.name) {
+            case "gtcb-blocks/custom-block":
+              return <Footer key = {`${block.name}-${i}`}/>   
+            case "gtcb-blocks/custom-block2":              
+              break;
+            case "gtcb-blocks/custom-block3":
+              return <LoveUsing data={productData.reviewBlock} key = {`${block.name}-${i}`}/>   
+            case "gtcb-blocks/custom-block4":
+              return <Static1 data={productData.downloadUpgradeBlock} key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block5":
+              return  <SystemReqs productData={productData} key = {`${block.name}-${i}`}/> 
+            case "gtcb-blocks/custom-block7":
+              return <Pagejump key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block9":
+              return <Banner data={productData.banner} key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block10":
+              return <Triplesvg data={productData.svgRepeater} key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block11":
+              return <Featuretable data={productData.infoTable} key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block12":
+              return <Gallery gallery={productData.gallery} key = {`${block.name}-${i}`}/>
+            case "gtcb-blocks/custom-block13":
+              return <Accordion data={productFeatures.nodes} accordiondata = {acfOptionsOptions.accordionData} key = {`${block.name}-${i}`}/>
+            default:
+              return <div className="dangeroushtmlwrapper" dangerouslySetInnerHTML={{__html : block.originalContent}} key = {`${block.name}-${i}`}/>
+          }
+          return '';
+        })
+      } 
     </section>
   );
 };
@@ -139,6 +157,28 @@ export const query = graphql`
             }
           }
           name
+        }
+      }
+      blocks {
+        name
+        originalContent
+      }
+    }
+    wp {
+      acfOptionsOptions {
+        accordionData {
+          iconForFeature {
+            bodyText
+            feature {
+              name
+            }
+            icon {
+              sourceUrl
+            }
+            image {
+              sourceUrl
+            }
+          }
         }
       }
     }
