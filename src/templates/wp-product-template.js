@@ -168,6 +168,7 @@ export const query = graphql`
       acfOptionsOptions {
         accordionData {
           iconForFeature {
+            bodyText
             feature {
               name
             }

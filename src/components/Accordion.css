@@ -68,8 +68,38 @@
 .Accordion .itemcontent ul li.selected .imageholder img {
   filter: invert(61%) sepia(4%) saturate(2427%) hue-rotate(220deg) brightness(96%) contrast(87%); }
 
+.Accordion .itemcontent .contentholder {
+  white-space: normal;
+  padding: 0 10rem 0 10rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: Proxima Nova Regular;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.Accordion .itemcontent .contentholder .monitorimage {
+  margin-top: 20px;
+  height: 545px; }
+
+.Accordion .itemcontent .contentholder .monitorimage img {
+  position: relative;
+  top: 10px;
+  right: 3px;
+  height: 415px;
+  width: 740px; }
+
+.Accordion .itemcontent .contentholder .monitorimage::before {
+  content: "";
+  background-image: url("./img/monitor.png");
+  height: 570px;
+  width: 761px;
+  position: absolute;
+  left: 29.8%; }
+
 .Accordion .itemcontent.open {
-  display: block; }
+  display: block;
+  overflow: auto; }
 
 .Accordion h5 {
   margin-top: 0;
