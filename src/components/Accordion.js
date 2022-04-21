@@ -26,7 +26,7 @@ export default function Accordion({data,accordiondata}) {
             toplevelfeature.push(entry);
             if (wpChildren.nodes[0] !== undefined) {
                 let feature = iconForFeature.find((elem) => elem.feature.name === wpChildren.nodes[0].name);
-                defaultContent.push(feature.bodyText);
+                defaultContent.push({"text" : feature.bodyText, "image" : feature.image.sourceUrl});
                 
             }
             else {
@@ -56,7 +56,7 @@ export default function Accordion({data,accordiondata}) {
                                             let feature = iconForFeature.find((elem) => elem.feature.name === child.name);
                                             let url = feature.icon.sourceUrl;
                                             let array = [...Content];
-                                            array[parentindex] = feature.bodyText;
+                                            array[parentindex] = {"text": feature.bodyText , "image" : feature.image.sourceUrl};
                                             return (
                                                 <li className= {index === 0 ? "selected" : ""} onClick={(event) => {setContent(array);selecticon(event.currentTarget)}} aria-hidden key={`accordioncontent-${feature.name}-${index}`}>
                                                     <div className='imageholder'>
@@ -68,10 +68,10 @@ export default function Accordion({data,accordiondata}) {
                                         })
                                     }                                        
                                 </ul>
-                                <div className='contentholder'>
-                                    {Content[parentindex]}
+                                <div className= {entry.wpChildren.nodes.length !== 0 ? 'contentholder' : 'hidden'}>
+                                    {Content[parentindex].text}
                                     <div className='monitorimage'>
-                                        <img alt = "" src="http://localhost:8000/wp-content/uploads/2022/04/drawing.png"/>
+                                        <img alt = "" src={Content[parentindex].image}/>
                                     </div>
                                 </div>
                             </div>

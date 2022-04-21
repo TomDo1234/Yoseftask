@@ -73,6 +73,9 @@
                 }                
             }             
         }    
+        .hidden {
+            display:none;
+        }
         .contentholder {
             white-space: normal;
             padding: 0 10rem 0 10rem;
@@ -88,9 +91,9 @@
                 img {
                     position:relative;
                     top:10px;
-                    right:3px;
+                    left : 0.91%;
                     height: 415px;
-                    width: 740px;
+                    width: 739px;
                 }
             }
             .monitorimage::before {
@@ -99,7 +102,7 @@
                 height: 570px;
                 width: 761px;
                 position:absolute;
-                left:29.8%;
+                left: calc(50% - width/2);
             }
         }    
     }

@@ -175,6 +175,9 @@ export const query = graphql`
             icon {
               sourceUrl
             }
+            image {
+              sourceUrl
+            }
           }
         }
       }
