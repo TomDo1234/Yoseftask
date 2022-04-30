@@ -1,21 +1,10 @@
 import React from 'react';
-
-export default function LoveUsing({data}) {
-    return(
-        <div className='loveusing'>
-            <div className="left">
-                <h3>{data.heading}</h3>
-                <div>
-                    <div className="feedback">
-                        {data.subheading}
-                    </div>
-                    <div className="writeareview"></div>
-                </div>
-            </div>
-            <div className="message">
-                {data.bodyText}
-            </div>
-        </div>
-    );
+export default function LoveUsing({ data }) {
+    return (React.createElement("div", { className: 'loveusing' },
+        React.createElement("div", { className: "left" },
+            React.createElement("h3", null, data.heading),
+            React.createElement("div", null,
+                React.createElement("div", { className: "feedback" }, data.subheading),
+                React.createElement("div", { className: "writeareview" }))),
+        React.createElement("div", { className: "message" }, data.bodyText)));
 }
-

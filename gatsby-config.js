@@ -8,6 +8,7 @@ module.exports = {
       },
       `gatsby-plugin-gatsby-cloud`,
       `gatsby-plugin-sharp`,
-      `gatsby-transformer-sharp`
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-typescript`
     ]
   };

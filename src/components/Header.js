@@ -1,21 +1,19 @@
 import React from 'react';
-
 export default function Header() {
-    return(
-        <header className='theheader'>
-            <div className= "thelogo"></div>
-            <div className= "headercontainer">
-                <div className= "headerlink">Products&nbsp;&nbsp;<img className= "downarrow" alt=""/></div>                
-                <div className= "headerlink">Industries&nbsp;&nbsp;<img className= "downarrow" alt=""/></div>                
-                <div className= "headerlink">Pricing</div>
-                <div className= "headerlink">About</div>
-                <div className= "headerlink">Downloads</div>
-                <div className= "headerlink">Dealers</div>
-                <div className= "headerlink">Support</div>
-                <div className= "headerlink">Contact</div>
-            </div>  
-            <div className= "theshoppingbag"></div>          
-        </header>
-    );
+    return (React.createElement("header", { className: 'theheader' },
+        React.createElement("div", { className: "thelogo" }),
+        React.createElement("div", { className: "headercontainer" },
+            React.createElement("div", { className: "headerlink" },
+                "Products\u00A0\u00A0",
+                React.createElement("img", { className: "downarrow", alt: "" })),
+            React.createElement("div", { className: "headerlink" },
+                "Industries\u00A0\u00A0",
+                React.createElement("img", { className: "downarrow", alt: "" })),
+            React.createElement("div", { className: "headerlink" }, "Pricing"),
+            React.createElement("div", { className: "headerlink" }, "About"),
+            React.createElement("div", { className: "headerlink" }, "Downloads"),
+            React.createElement("div", { className: "headerlink" }, "Dealers"),
+            React.createElement("div", { className: "headerlink" }, "Support"),
+            React.createElement("div", { className: "headerlink" }, "Contact")),
+        React.createElement("div", { className: "theshoppingbag" })));
 }
-

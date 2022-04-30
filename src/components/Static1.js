@@ -1,17 +1,10 @@
 import React from 'react';
-
-export default function Static1({data}) {
-    return(
-        <div className='static1'>
-            <div className="colhalf">
-                <div>{data.upgradeText}</div>
-                <div className="roundbutton">Upgrade</div>
-            </div>
-            <div className="colhalf">
-                <div>{data.downloadText}</div>
-                <div className="roundbutton">Download FREE Demo</div>
-            </div>
-        </div>
-    );
+export default function Static1({ data }) {
+    return (React.createElement("div", { className: 'static1' },
+        React.createElement("div", { className: "colhalf" },
+            React.createElement("div", null, data.upgradeText),
+            React.createElement("div", { className: "roundbutton" }, "Upgrade")),
+        React.createElement("div", { className: "colhalf" },
+            React.createElement("div", null, data.downloadText),
+            React.createElement("div", { className: "roundbutton" }, "Download FREE Demo"))));
 }
-

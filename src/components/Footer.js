@@ -1,90 +1,81 @@
 import React from 'react';
-
 export default function Footer() {
-    return(
-        <div className='thefooter'>
-            <div className = "row">
-                <div className = "col">
-                    <div className="headcol">SHOP FOR</div>
-                    <div className="selectedprod">VinylMaster CUT</div>
-                    <div>VinylMaster LTR</div>
-                    <div>VinylMaster DSR</div>
-                    <div>VinylMaster PRO</div>
-                    <div>VinylMaster XPT</div>
-                    <div>View Price List</div>
-                </div>
-                <div className= "col">
-                    <div className="headcol">SHOP BY INDUSTRY</div>
-                    <div>Craft &amp; Hobby</div>
-                    <div>Box, Card &amp; Paper</div>
-                    <div>T-Shirts and Caps</div>
-                    <div>Labels, Decals &amp; Stickers</div>
-                    <div>Vinyl Lettering</div>
-                    <div>Print Shops</div>
-                    <div>Sign Shops</div>
-                    <div>Production</div>
-                    <div>Government</div>
-                    <div>Education</div>
-                </div>
-                <div className= "col">
-                    <div className="headcol">SUPPORT</div>
-                    <div>Help &amp; Support Centre</div>
-                    <div>Lodge a Ticket</div>
-                </div>
-                <div className= "col">
-                    <div className="headcol">FOR EDUCATION</div>
-                    <div>Discount for Student and <br/> Teachers</div><br/>
-                    <div>Schools and Universities</div>
-                    <div>Free Offer for the Art of Graphic <br/> Design <br/> and Related Subjects</div><br/><br/>
-                    <br/>
-                    <div className="headcol">FOR BUSINESS</div>
-                    <div>VinylMaster for Dealers &amp; <br/> Resellers</div><br/>
-                    <div>OEM &amp; CustomWare</div>
-                    <div>Corporate Inquiries</div>
-                </div>
-                <div className= "col">
-                    <div className="headcol">VINYLMASTER ACCOUNT</div>
-                    <div>Login to Customer Portal</div>
-                    <div>Update Software</div>
-                    <br/>
-                    <div className="headcol">VINYLMASTER</div>
-                    <div>Download &amp; Install</div>
-                    <div>Contact Us</div>
-                    <div>About Us</div>
-                    <div>Dealers &amp; Resellers</div>
-                    <div>Supported Cutters</div>
-                </div>
-            </div>
-            <div className="bottomwrapper">
-                <div className="ourrecommendations">
-                    <h2>Our Recommendations</h2>
-                    <div className="bottomrow">
-                        <div className="recom">
-                            <div className="blueicon"></div>
-                            <span>&nbsp;&nbsp;VinylMaster PRO</span>
-                        </div>
-                        <div className="recom">
-                            <div className="greenicon"></div>
-                            <span>&nbsp;&nbsp;VinylMaster DSR</span>
-                        </div>
-                        <div className="recom">
-                            <div className="orangeicon"></div>
-                            <span>&nbsp;&nbsp;VinylMaster XPT</span>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-            <div className="verybottomwrapper">
-                © 1988-2022 a Future Corporation Pty Ltd. &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
-                Privacy Policy&nbsp;&nbsp;/
-                Terms of Use&nbsp;&nbsp;/
-                Terms &amp; Conditions of Sale&nbsp;&nbsp;/
-                EULA
-                <div className="bottomdisclaimer">
-				    *Not all cutters and printers are supported. For more information on cutters and printers, click here. Subject to terms and conditions. 					
-                </div>        
-            </div>
-        </div>
-    );
+    return (React.createElement("div", { className: 'thefooter' },
+        React.createElement("div", { className: "row" },
+            React.createElement("div", { className: "col" },
+                React.createElement("div", { className: "headcol" }, "SHOP FOR"),
+                React.createElement("div", { className: "selectedprod" }, "VinylMaster CUT"),
+                React.createElement("div", null, "VinylMaster LTR"),
+                React.createElement("div", null, "VinylMaster DSR"),
+                React.createElement("div", null, "VinylMaster PRO"),
+                React.createElement("div", null, "VinylMaster XPT"),
+                React.createElement("div", null, "View Price List")),
+            React.createElement("div", { className: "col" },
+                React.createElement("div", { className: "headcol" }, "SHOP BY INDUSTRY"),
+                React.createElement("div", null, "Craft & Hobby"),
+                React.createElement("div", null, "Box, Card & Paper"),
+                React.createElement("div", null, "T-Shirts and Caps"),
+                React.createElement("div", null, "Labels, Decals & Stickers"),
+                React.createElement("div", null, "Vinyl Lettering"),
+                React.createElement("div", null, "Print Shops"),
+                React.createElement("div", null, "Sign Shops"),
+                React.createElement("div", null, "Production"),
+                React.createElement("div", null, "Government"),
+                React.createElement("div", null, "Education")),
+            React.createElement("div", { className: "col" },
+                React.createElement("div", { className: "headcol" }, "SUPPORT"),
+                React.createElement("div", null, "Help & Support Centre"),
+                React.createElement("div", null, "Lodge a Ticket")),
+            React.createElement("div", { className: "col" },
+                React.createElement("div", { className: "headcol" }, "FOR EDUCATION"),
+                React.createElement("div", null,
+                    "Discount for Student and ",
+                    React.createElement("br", null),
+                    " Teachers"),
+                React.createElement("br", null),
+                React.createElement("div", null, "Schools and Universities"),
+                React.createElement("div", null,
+                    "Free Offer for the Art of Graphic ",
+                    React.createElement("br", null),
+                    " Design ",
+                    React.createElement("br", null),
+                    " and Related Subjects"),
+                React.createElement("br", null),
+                React.createElement("br", null),
+                React.createElement("br", null),
+                React.createElement("div", { className: "headcol" }, "FOR BUSINESS"),
+                React.createElement("div", null,
+                    "VinylMaster for Dealers & ",
+                    React.createElement("br", null),
+                    " Resellers"),
+                React.createElement("br", null),
+                React.createElement("div", null, "OEM & CustomWare"),
+                React.createElement("div", null, "Corporate Inquiries")),
+            React.createElement("div", { className: "col" },
+                React.createElement("div", { className: "headcol" }, "VINYLMASTER ACCOUNT"),
+                React.createElement("div", null, "Login to Customer Portal"),
+                React.createElement("div", null, "Update Software"),
+                React.createElement("br", null),
+                React.createElement("div", { className: "headcol" }, "VINYLMASTER"),
+                React.createElement("div", null, "Download & Install"),
+                React.createElement("div", null, "Contact Us"),
+                React.createElement("div", null, "About Us"),
+                React.createElement("div", null, "Dealers & Resellers"),
+                React.createElement("div", null, "Supported Cutters"))),
+        React.createElement("div", { className: "bottomwrapper" },
+            React.createElement("div", { className: "ourrecommendations" },
+                React.createElement("h2", null, "Our Recommendations"),
+                React.createElement("div", { className: "bottomrow" },
+                    React.createElement("div", { className: "recom" },
+                        React.createElement("div", { className: "blueicon" }),
+                        React.createElement("span", null, "\u00A0\u00A0VinylMaster PRO")),
+                    React.createElement("div", { className: "recom" },
+                        React.createElement("div", { className: "greenicon" }),
+                        React.createElement("span", null, "\u00A0\u00A0VinylMaster DSR")),
+                    React.createElement("div", { className: "recom" },
+                        React.createElement("div", { className: "orangeicon" }),
+                        React.createElement("span", null, "\u00A0\u00A0VinylMaster XPT"))))),
+        React.createElement("div", { className: "verybottomwrapper" },
+            "\u00A9 1988-2022 a Future Corporation Pty Ltd. \u00A0\u00A0\u00A0\u00A0/\u00A0\u00A0 Privacy Policy\u00A0\u00A0/ Terms of Use\u00A0\u00A0/ Terms & Conditions of Sale\u00A0\u00A0/ EULA",
+            React.createElement("div", { className: "bottomdisclaimer" }, "*Not all cutters and printers are supported. For more information on cutters and printers, click here. Subject to terms and conditions."))));
 }
-

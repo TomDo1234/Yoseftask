@@ -1,21 +1,16 @@
 import React from "react";
-
 export default function Pagejump() {
-    return(
-        <>
-        <div className='breadcrumb'>
-            <div>Previous Page / Previous Page / <span>VinylMaster CUT V5</span></div>
-        </div>
-        <header className='pagejumps'>
-            <div className= "pagejumpcontainer">
-                <div className= "pagejump">Overview</div>                
-                <div className= "pagejump">Features</div>                
-                <div className= "pagejump">Compare</div>
-                <div className= "pagejump">Upgrade</div>
-                <div className= "pagejump">Free Demo</div>
-                <div className= "pagejump">System Requirements</div>
-            </div>          
-        </header>
-        </>
-    );
+    return (React.createElement(React.Fragment, null,
+        React.createElement("div", { className: 'breadcrumb' },
+            React.createElement("div", null,
+                "Previous Page / Previous Page / ",
+                React.createElement("span", null, "VinylMaster CUT V5"))),
+        React.createElement("header", { className: 'pagejumps' },
+            React.createElement("div", { className: "pagejumpcontainer" },
+                React.createElement("div", { className: "pagejump" }, "Overview"),
+                React.createElement("div", { className: "pagejump" }, "Features"),
+                React.createElement("div", { className: "pagejump" }, "Compare"),
+                React.createElement("div", { className: "pagejump" }, "Upgrade"),
+                React.createElement("div", { className: "pagejump" }, "Free Demo"),
+                React.createElement("div", { className: "pagejump" }, "System Requirements")))));
 }

@@ -1,10 +1,6 @@
 import React from 'react';
-
-export default function Sectionsummary({data}) {
-    return (
-        <div className= "sectionsummary" style={{backgroundColor : data.color}}> 
-                <h3>{data.header}</h3>
-                <div className='thetext'>{data.bodyText}</div>          
-        </div>   
-    );
+export default function Sectionsummary({ data }) {
+    return (React.createElement("div", { className: "sectionsummary", style: { backgroundColor: data.color } },
+        React.createElement("h3", null, data.header),
+        React.createElement("div", { className: 'thetext' }, data.bodyText)));
 }
